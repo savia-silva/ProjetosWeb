@@ -5,6 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f4f4f4;
+    padding-top: 50px;
 }
 
 .navbar {
@@ -36,3 +37,39 @@ body {
     border: none;
     border-radius: 5px;
 }
+
+.bloco {
+    width: 90%;
+    max-width: 800px;
+}
+
+.conteudo {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.conteudo h1 {
+    font-size: 25px;
+}
+
+.conteudo h2 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.conteudo h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.conteudo a {
+    color: #f06000;
+    text-decoration: none;
+}
+
+.conteudo a:hover {
+    color:#000000;
+}
+
