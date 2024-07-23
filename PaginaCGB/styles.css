@@ -1,0 +1,199 @@
+/* Reseta margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do Img */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do header e nav */
+header {
+    background: #841536;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do Conteudo */
+
+main {
+    padding: 2em 0 5em;
+    max-width: 1280px;
+    max-height: 800px;
+    margin: auto;
+
+}
+
+section {
+    padding: 2em 0;
+}
+
+/* Estilo da Titulo Principal Index*/
+
+.tema {
+    text-align: center;
+    background:#841536;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.tema h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.tema p {
+    font-size: 1.2em;
+}
+
+/* Estilo dos cards */
+
+.cards, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.card, .contact form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    flex: 1 1 calc(35% - 2em);
+    max-width: calc(35% - 2em);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+/* Estilo do form */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact form button {
+    padding: 0.7em;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilo do Footer */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background:#841536;
+    color: #fff;
+    margin-top: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul.active {
+        display: flex;
+    }
+    header nav ul li {
+        margin: 1em 0;
+    }
+    .card, .contact form {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .tema h1 {
+        font-size: 2em;
+    }
+    .tema p, .card p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tema h1 {
+        font-size: 1.5em;
+    }
+
+    .tema p, .card p {
+        font-size: 0.8em;
+    }
+
+    .card h2 {
+        font-size: 1.5em;
+    }
+
+}
